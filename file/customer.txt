@@ -1,0 +1,3 @@
+1; Sammy Student,0
+2; Teechy Teacher,1
+3; Sammy StudentTeacher,2
