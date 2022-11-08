@@ -3,12 +3,12 @@ package backend;
 import java.util.*;
 
 public class Order {
-    int id;
-    String date;    // formatted YY-MM-DD
-    String time;    // formatted HR-MIN-SEC
-    Customer customer;
-    HashMap<Food, Integer> productList = new HashMap<Food, Integer>();  // Food, Qty
-    String status; // counter, online-pending, online-complete
+    private int id;
+    private String date;    // formatted YY-MM-DD
+    private String time;    // formatted HR-MIN-SEC
+    private Customer customer;
+    private HashMap<Food, Integer> productList = new HashMap<Food, Integer>();  // Food, Qty
+    private String status; // counter, online-pending, online-complete
 
     // constructors
     public Order(){}

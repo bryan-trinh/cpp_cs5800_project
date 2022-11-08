@@ -1,12 +1,12 @@
 package backend;
 
 public class Customer {
-    String firstName;
-    String lastName;
-    String DOB;
-    String phone;
-    Address address;
-    int broncoID;
+    private String firstName;
+    private String lastName;
+    private String DOB;
+    private String phone;
+    private Address address;
+    private int broncoID;
 
     // constructor
     public Customer(){}
@@ -71,11 +71,11 @@ public class Customer {
 }
 
 class Address{
-    String street;
-    int number;
-    int zipCode;
-    String city;
-    String state;
+    private String street;
+    private int number;
+    private int zipCode;
+    private String city;
+    private String state;
 
     // constructor
     public Address(){}
@@ -157,10 +157,10 @@ interface Professor_I{
 }
 
 class Student extends Customer implements Student_I{
-    String enterDate;
-    String gradDate;
-    String major;
-    String minor;
+    private String enterDate;
+    private String gradDate;
+    private String major;
+    private String minor;
 
     // constructor
     public Student(){}
@@ -208,9 +208,9 @@ class Student extends Customer implements Student_I{
 }
 
 class Professor extends Customer implements Professor_I{
-    String department;
-    String office;
-    String research;
+    private String department;
+    private String office;
+    private String research;
 
     // constructor
     public Professor(){}
@@ -249,13 +249,13 @@ class Professor extends Customer implements Professor_I{
 }
 
 class StudentProfessor extends Customer implements Student_I, Professor_I{
-    String enterDate;
-    String gradDate;
-    String major;
-    String minor;
-    String department;
-    String office;
-    String research;
+    private String enterDate;
+    private String gradDate;
+    private String major;
+    private String minor;
+    private String department;
+    private String office;
+    private String research;
 
     // constructor
     public StudentProfessor(){}

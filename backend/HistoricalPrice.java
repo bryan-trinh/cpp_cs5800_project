@@ -5,7 +5,7 @@ import java.util.*;
 public class HistoricalPrice {
     // key - (food id, date)
     // value - price
-    HashMap<HashMap<Integer, String>, Double> historicalPriceList = new  HashMap<HashMap<Integer, String>, Double>();
+    private HashMap<HashMap<Integer, String>, Double> historicalPriceList = new  HashMap<HashMap<Integer, String>, Double>();
 
     public HistoricalPrice(){}
     public HistoricalPrice( HashMap<HashMap<Integer, String>, Double> historicalPriceList){

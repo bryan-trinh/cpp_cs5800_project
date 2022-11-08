@@ -6,17 +6,17 @@ import java.io.*;
 public class Restaurant {
     boolean DEBUG = false;
     // Customer Id, Customer
-    HashMap<Integer, Customer> customerTable = new HashMap<Integer, Customer>();
+    private HashMap<Integer, Customer> customerTable = new HashMap<Integer, Customer>();
     
     // Food Id, Food
-    HashMap<Integer, Food> foodTable = new HashMap<Integer, Food>();
+    private HashMap<Integer, Food> foodTable = new HashMap<Integer, Food>();
 
     // (id, date), price
-    HistoricalPrice historicalPriceTable = new HistoricalPrice();
+    private HistoricalPrice historicalPriceTable = new HistoricalPrice();
 
     // order table that is pulled and updated by server
     // order id, order
-    HashMap<Integer, Order> orderTable = new HashMap<Integer, Order>();
+    private  HashMap<Integer, Order> orderTable = new HashMap<Integer, Order>();
 
     // constructor
     public Restaurant(){

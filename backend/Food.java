@@ -2,8 +2,8 @@ package backend;
 
 // Food class will encompass both dish and beverage
 public class Food {
-    int id;
-    String name;
+    private int id;
+    private String name;
 
     // constructor
     public Food(){}
