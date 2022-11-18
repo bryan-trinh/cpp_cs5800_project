@@ -86,7 +86,16 @@ public class Restaurant {
 
     private void init(){
         readFile(); // TODO temporary, will be replaced
+        // launch GUI, start on login page
         pullOrders();
+    }
+
+    // TODO - make some type of login function
+    public boolean login(String id, String password){
+        boolean success = false;
+        // verify id/pass via database
+
+        return success;
     }
 
     // TODO some discount scheme
@@ -98,6 +107,11 @@ public class Restaurant {
     public void pullOrders(){
         // pull all orders into an HashMap<Order ID, Order>
         // this.orderTable = ???
+
+        // update everything else
+        // this.customerTable = ???
+        // this.foodTable = ???
+        // this.historicalPriceTable = ???
 
         // for each id check order status, and change all online-pending to online-complete
     }
