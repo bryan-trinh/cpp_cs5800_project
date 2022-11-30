@@ -1,8 +1,7 @@
 package model.entities;
 
 public class Customer {
-    private String firstName;
-    private String lastName;
+    private String name;
     private String DOB;
     private String phone;
     private Address address;
@@ -10,9 +9,8 @@ public class Customer {
 
     // constructor
     public Customer(){}
-    public Customer(String firstName, String lastName, String DOB, String phone, Address address, int broncoID){
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Customer(String name, String DOB, String phone, Address address, int broncoID){
+        this.name = name;
         this.DOB = DOB;
         this.phone = phone;
         this.address = address;
@@ -20,12 +18,8 @@ public class Customer {
     }
 
     // getters
-    public String getFirstName(){
-        return this.firstName;
-    }
-
-    public String getLastName(){
-        return this.lastName;
+    public String getName(){
+        return this.name;
     }
 
     public String getDOB(){
@@ -45,12 +39,8 @@ public class Customer {
     }
 
     // setters
-    public void setFirstName(String name){
-        this.firstName = name;
-    }
-
-    public void setLastName(String name){
-        this.lastName = name;
+    public void setName(String name){
+        this.name = name;
     }
 
     public void setDOB(String DOB){
@@ -164,8 +154,8 @@ class Student extends Customer implements Student_I{
 
     // constructor
     public Student(){}
-    public Student(String firstName, String lastName, String DOB, String phone, Address address, int broncoID, String enterDate, String gradDate, String major, String minor){
-        super(firstName, lastName, DOB, phone, address, broncoID);
+    public Student(String name, String DOB, String phone, Address address, int broncoID, String enterDate, String gradDate, String major, String minor){
+        super(name, DOB, phone, address, broncoID);
         this.enterDate = enterDate;
         this.gradDate = gradDate;
         this.major = major;
@@ -214,8 +204,8 @@ class Professor extends Customer implements Professor_I{
 
     // constructor
     public Professor(){}
-    public Professor(String firstName, String lastName, String DOB, String phone, Address address, int broncoID, String department, String office, String research){
-        super(firstName, lastName, DOB, phone, address, broncoID);
+    public Professor(String name, String DOB, String phone, Address address, int broncoID, String department, String office, String research){
+        super(name, DOB, phone, address, broncoID);
         this.department = department;
         this.office = office;
         this.research = research;
@@ -259,8 +249,8 @@ class StudentProfessor extends Customer implements Student_I, Professor_I{
 
     // constructor
     public StudentProfessor(){}
-    public StudentProfessor(String firstName, String lastName, String DOB, String phone, Address address, int broncoID, String enterDate, String gradDate, String major, String minor, String department, String office, String research){
-        super(firstName, lastName, DOB, phone, address, broncoID);
+    public StudentProfessor(String name, String DOB, String phone, Address address, int broncoID, String enterDate, String gradDate, String major, String minor, String department, String office, String research){
+        super(name, DOB, phone, address, broncoID);
         this.enterDate = enterDate;
         this.gradDate = gradDate;
         this.major = major;
