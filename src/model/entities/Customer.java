@@ -6,15 +6,17 @@ public class Customer {
     private String phone;
     private Address address;
     private int broncoID;
+    private String password;
 
     // constructor
     public Customer(){}
-    public Customer(String name, String DOB, String phone, Address address, int broncoID){
+    public Customer(String name, String DOB, String phone, Address address, int broncoID, String password){
         this.name = name;
         this.DOB = DOB;
         this.phone = phone;
         this.address = address;
         this.broncoID = broncoID;
+        this.password = password;
     }
 
     // getters
@@ -37,6 +39,10 @@ public class Customer {
     public int getBroncoID(){
         return this.broncoID;
     }
+    
+    public String getPassword(){
+        return this.password;
+    }
 
     // setters
     public void setName(String name){
@@ -57,6 +63,10 @@ public class Customer {
 
     public void setBroncoID(int id){
         this.broncoID = id;
+    }
+    
+    public void setPassword(String password){
+        this.password = password;
     }
 }
 
